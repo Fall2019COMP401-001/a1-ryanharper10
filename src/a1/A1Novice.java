@@ -26,7 +26,7 @@ public class A1Novice {
 				double total = quantity * price;
 				
 				sum += total;
-				realsum = String.format("%.2f", sum)
+				realsum = String.format("%.2f", sum);
 			}
 			
 			System.out.println(firstname.charAt(0) + ". " + lastname + ": " + realsum);
