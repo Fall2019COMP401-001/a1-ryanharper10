@@ -17,6 +17,7 @@ public class A1Novice {
 			String lastname = scan.next();
 			int numberofitems = scan.nextInt();
 			double sum = 0;
+			String realsum = "";
 			
 			for (int j = 0; j < numberofitems; j++) {
 				int quantity = scan.nextInt();
@@ -25,9 +26,10 @@ public class A1Novice {
 				double total = quantity * price;
 				
 				sum += total;
+				realsum = String.format("%.2f", sum)
 			}
 			
-			System.out.println(firstname.charAt(0) + ". " + lastname + ": " + sum);
+			System.out.println(firstname.charAt(0) + ". " + lastname + ": " + realsum);
 		}
 		
 	}

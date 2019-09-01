@@ -42,12 +42,14 @@ public class A1Adept {
 		}
 		
 		double max = max(items);
+		String realmax = String.format("%.2f", max);
 		String maxname = matchName(max, items, customerlist);
-		System.out.println("Biggest: " + maxname + " (" + max + ")");
+		System.out.println("Biggest: " + maxname + " (" + realmax + ")");
 		
 		double min = min(items);
+		String realmin = String.format("%.2f", min);
 		String minname = matchName(min, items, customerlist);
-		System.out.println("Smallest: " + minname + " (" + min + ")");
+		System.out.println("Smallest: " + minname + " (" + realmin + ")");
 		
 		double average = average(items);
 		String avg = String.format("%.2f", average);
